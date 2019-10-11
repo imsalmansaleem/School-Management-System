@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Free Web tutorials">
+  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  	<meta name="author" content="John Doe">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="smartComms.css">
+	<script src="https://kit.fontawesome.com/4f4d0813e9.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+
+<body>  
+
+<div class="container-fluid pb-5 pt-5">
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <h1>Sign In</h1>
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-md-4 offset-md-4 pt-5">
+      <h5>Email Address</h5>
+      <form action="verify.php" method="POST">
+      <input type="text" placeholder="Email address" name="user" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" data-validation="email">
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-md-4 offset-md-4 pt-5">
+      <h5>Password</h5>
+      <input type="password" placeholder="Password" name="pass" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+    </div> 
+  </div>
+  <div class="row pt-5">
+    <div class="col-md-4 offset-md-4">
+      <button type="submit" class="btn btn-primary btn-lg btn-block BUT">Sign In</button>
+      <hr id="nil2">
+      </form>
+    </div> 
+  </div>
+  
+</div>
+
+
+<footer>
+  <div class="container-fluid pt-5">
+    
+    <div class="row">
+        <div class="span6" style="float: none; margin: 0 auto;">
+          <p>Copyright @2019 School Management System, Inc. All Rights Reserved.</p>
+        </div>
+    </div>
+  </div>
+
+</footer> 
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+  <script type="text/javascript">
+    $.validate({
+    modules : 'security'
+  });   
+  </script>
+</body>
+</html>
