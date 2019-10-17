@@ -4,6 +4,7 @@ session_start();
 
 if($_SESSION['username']==true)
 {
+//Adding a new student record requires already existing parent record
 ?>
 
 <!DOCTYPE html>
